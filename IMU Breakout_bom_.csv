@@ -1,0 +1,25 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
+1,Unpolarized capacitor,C,C1 C2 C3 C4,10PF,C_0402_1005Metric,4,~
+2,Unpolarized capacitor,C,C5 C6,1UF,C_0402_1005Metric,2,~
+3,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x06_Male,J1,Conn_01x06_Male,Molex_CLIK-Mate_502494-0670_1x06-1MP_P2.00mm_Horizontal,1,~
+4,Resistor,R,R1,R,R_0402_1005Metric,1,~
+5,"Intelligent 9-axis absolute orientation sensor, LGA-28",BNO055,U2,BNO055,LGA-28_5.2x3.8mm_P0.5mm,1,https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST_BNO055_DS000_14.pdf
+6,"300mA Low-dropout Voltage Regulator, Vout 3.0V, Vin up to 5.5V, SOT-23",MIC5501-3.0YM5,U3,MIC5501-3.0YM5,SOT-23-5,1,http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf
+7,"ARM Cortex-M4 MCU, 256KB flash, 64KB RAM, 80MHz, 1.71-3.6V, 26 GPIO, UFQFPN-32",STM32L432KCUx,U1,STM32L432KCUx,QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm,1,http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00257205.pdf
+8,"Four pin crystal (GND on pins 2 and 4), e.g. in SMD package",Crystal_GND24,Y2,32.768KHZ,Crystal_SMD_2016-4Pin_2.0x1.6mm,1,~
+9,"Four pin crystal (GND on pins 2 and 4), e.g. in SMD package",Crystal_GND24,Y1,32MHZ,Crystal_SMD_2016-4Pin_2.0x1.6mm,1,~
+
+
+
+
+
+Component Groups:,9
+Component Count:,13
+Fitted Components:,13
+Number of PCBs:,1
+Total components:,13
+Schematic Version:,
+Schematic Date:,
+BoM Date:,Sun 26 Aug 2018 06:37:15 PM EDT
+Schematic Source:,/home/kbisland/Documents/IMU Breakout/IMU Breakout.sch
+KiCad Version:,Eeschema 5.0.0-fee4fd1~66~ubuntu16.04.1
