@@ -260,97 +260,6 @@ F 3 "" H 1850 4000 50  0001 C CNN
 	1    1850 4000
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:Crystal_GND24 Y1
-U 1 1 5B81F368
-P 1300 4550
-F 0 "Y1" V 1254 4791 50  0000 L CNN
-F 1 "32MHZ" V 1500 3800 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm" H 1300 4550 50  0001 C CNN
-F 3 "~" H 1300 4550 50  0001 C CNN
-	1    1300 4550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1300 4400 1700 4400
-Wire Wire Line
-	1700 4400 1700 4500
-Wire Wire Line
-	1700 4500 1850 4500
-Wire Wire Line
-	1300 4700 1700 4700
-Wire Wire Line
-	1700 4700 1700 4600
-Wire Wire Line
-	1700 4600 1850 4600
-$Comp
-L Device:C C2
-U 1 1 5B81F693
-P 1300 4850
-F 0 "C2" H 1415 4896 50  0000 L CNN
-F 1 "10PF" H 1415 4805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1338 4700 50  0001 C CNN
-F 3 "~" H 1300 4850 50  0001 C CNN
-	1    1300 4850
-	1    0    0    -1  
-$EndComp
-Connection ~ 1300 4700
-$Comp
-L Device:C C1
-U 1 1 5B81F716
-P 1300 4250
-F 0 "C1" H 1415 4296 50  0000 L CNN
-F 1 "10PF" H 1415 4205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1338 4100 50  0001 C CNN
-F 3 "~" H 1300 4250 50  0001 C CNN
-	1    1300 4250
-	1    0    0    -1  
-$EndComp
-Connection ~ 1300 4400
-$Comp
-L power:GND #PWR0117
-U 1 1 5B81F769
-P 1500 4550
-F 0 "#PWR0117" H 1500 4300 50  0001 C CNN
-F 1 "GND" V 1505 4422 50  0000 R CNN
-F 2 "" H 1500 4550 50  0001 C CNN
-F 3 "" H 1500 4550 50  0001 C CNN
-	1    1500 4550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0118
-U 1 1 5B81F7C1
-P 1100 4550
-F 0 "#PWR0118" H 1100 4300 50  0001 C CNN
-F 1 "GND" V 1105 4422 50  0000 R CNN
-F 2 "" H 1100 4550 50  0001 C CNN
-F 3 "" H 1100 4550 50  0001 C CNN
-	1    1100 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0119
-U 1 1 5B81F82B
-P 1300 5000
-F 0 "#PWR0119" H 1300 4750 50  0001 C CNN
-F 1 "GND" H 1305 4827 50  0000 C CNN
-F 2 "" H 1300 5000 50  0001 C CNN
-F 3 "" H 1300 5000 50  0001 C CNN
-	1    1300 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0120
-U 1 1 5B81F868
-P 1300 4100
-F 0 "#PWR0120" H 1300 3850 50  0001 C CNN
-F 1 "GND" H 1305 3927 50  0000 C CNN
-F 2 "" H 1300 4100 50  0001 C CNN
-F 3 "" H 1300 4100 50  0001 C CNN
-	1    1300 4100
-	-1   0    0    1   
-$EndComp
 Text GLabel 2850 5200 2    50   Input ~ 0
 SWDIO
 Text GLabel 2850 5300 2    50   Input ~ 0
@@ -387,17 +296,6 @@ F 2 "Capacitor_SMD:C_0402_1005Metric" H 5788 3250 50  0001 C CNN
 F 3 "~" H 5750 3400 50  0001 C CNN
 	1    5750 3400
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0121
-U 1 1 5B81FD43
-P 4950 3750
-F 0 "#PWR0121" H 4950 3500 50  0001 C CNN
-F 1 "GND" V 4955 3622 50  0000 R CNN
-F 2 "" H 4950 3750 50  0001 C CNN
-F 3 "" H 4950 3750 50  0001 C CNN
-	1    4950 3750
-	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0122
@@ -460,13 +358,13 @@ Text GLabel 1850 5300 0    50   Input ~ 0
 SCL
 Text GLabel 1850 5400 0    50   Input ~ 0
 SDA
-Text GLabel 2850 4400 2    50   Input ~ 0
+Text GLabel 1850 5000 0    50   Input ~ 0
 SCK
-Text GLabel 2850 4500 2    50   Input ~ 0
+Text GLabel 1850 5100 0    50   Input ~ 0
 MISO
-Text GLabel 2850 4600 2    50   Input ~ 0
+Text GLabel 1850 5200 0    50   Input ~ 0
 MOSI
-Text GLabel 2850 4700 2    50   Input ~ 0
+Text GLabel 1850 4500 0    50   Input ~ 0
 CS
 $Comp
 L Device:R R1
@@ -491,4 +389,43 @@ F 3 "~" H 3400 1500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 3400 1350
+$Comp
+L Connector:Conn_01x04_Female J2
+U 1 1 5BABE773
+P 6700 1300
+F 0 "J2" V 6640 1012 50  0000 R CNN
+F 1 "Conn_01x04_Female" V 6549 1012 50  0000 R CNN
+F 2 "pads1x4:1x4Pads" H 6700 1300 50  0001 C CNN
+F 3 "~" H 6700 1300 50  0001 C CNN
+	1    6700 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5BABE838
+P 6900 1500
+F 0 "#PWR0101" H 6900 1250 50  0001 C CNN
+F 1 "GND" H 6905 1327 50  0000 C CNN
+F 2 "" H 6900 1500 50  0001 C CNN
+F 3 "" H 6900 1500 50  0001 C CNN
+	1    6900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5BABE8BA
+P 6800 1500
+F 0 "#PWR0102" H 6800 1350 50  0001 C CNN
+F 1 "+3.3V" H 6815 1673 50  0000 C CNN
+F 2 "" H 6800 1500 50  0001 C CNN
+F 3 "" H 6800 1500 50  0001 C CNN
+	1    6800 1500
+	-1   0    0    1   
+$EndComp
+Text GLabel 6700 1500 3    50   Input ~ 0
+SWDIO
+Text GLabel 6600 1500 3    50   Input ~ 0
+SWCLK
+Wire Wire Line
+	4950 3550 4950 3750
 $EndSCHEMATC

@@ -1,0 +1,24 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.0.1-33cea8e~67~ubuntu16.04.1*
+G04 #@! TF.CreationDate,2018-10-18T10:52:16-04:00*
+G04 #@! TF.ProjectId,IMU Breakout,494D5520427265616B6F75742E6B6963,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Profile,NP*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 5.0.1-33cea8e~67~ubuntu16.04.1) date Thu 18 Oct 2018 10:52:16 AM EDT*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,0.200000*%
+G04 APERTURE END LIST*
+D10*
+X0Y0D02*
+X0Y-20000000D01*
+X0Y-20000000D02*
+X20000000Y-20000000D01*
+X20000000Y0D02*
+X20000000Y-20000000D01*
+X0Y0D02*
+X20000000Y0D01*
+M02*
